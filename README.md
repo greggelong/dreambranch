@@ -8,3 +8,4 @@ So in this encoding “yes” and “no” would be would be groups of three and
 The description of your dream, my recent work with encoding messages and moving popsicle sticks with servo’s, was the cause for me to re-visit this Pythagorean tree.
 Visual encoding: I think there is an interesting way to bring re-create the ‘Yes’ and ‘no’ branches from your dream.  a branch is made up of branch segments and some segments are joined to other and each has an angle it should ultimately move to.  These segments and angles are held in the “dna” of the branch. The code is slightly more complicated. But I have been interested in genetic algorithms recently and this is a good case for it.
 
+a kinetic branch made from a very optimistic network graph that is trying to realize someone's dream. #creativecoding #codeart #p5js #processing #optimistic #tree #branch
