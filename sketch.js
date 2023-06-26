@@ -53,7 +53,7 @@ let instr2 = [
 ];
 let count=1
 function setup() {
-  createCanvas(800, 800);
+  createCanvas(windoWidth, windowHeight);
   angleMode(DEGREES);
   greg = new Gurtle(width / 4,height-35, color(167,173,186));
   yuan = new Gurtle(width-width/4,height-35,color(192,197,206))
