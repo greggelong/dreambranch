@@ -33,13 +33,32 @@ let instr = [
   ["r", 65],
   ["f", sz],
 ];
+
+let instr2 = [
+["f", sz],
+["r", 135],
+["f", sz],
+["l", 135],
+["f", sz],
+["r", 65],
+["f", sz],
+["r", 90],
+["f", sz],
+["r", 90],
+["f", sz],
+["r", 90],
+["f", sz],
+["r", 90],
+["f", sz],
+];
 let count=1
 function setup() {
   createCanvas(800, 800);
   angleMode(DEGREES);
-  greg = new Gurtle(width / 2,height-35, color(167,173,186));
-  //yuan = new Gurtle(0,height/4,color(255,255,0))
+  greg = new Gurtle(width / 4,height-35, color(167,173,186));
+  yuan = new Gurtle(width-width/4,height-35,color(192,197,206))
   greg.angle = -90;
+  yuan.angle =-90
   strokeWeight(15)
   background(0);
   //greg.forward(100);
@@ -52,18 +71,18 @@ function setup() {
 function draw(){
     background(0)
     offset = sin(frameCount)
-    //yuan.x =0
-    //yuan.y = height/3
-    //if (frameCount%10==0){
-     //   count++
-   // }
-   // strokeWeight(1)
-    //koch(yuan,count%4,800)
-    //strokeWeight(15)
+  
     greg.angle = -90;
-    greg.x=width/2
+    greg.x=width/4
     greg.y=height-35
     doinstr(greg,instr,offset)
+
+
+    yuan.angle = -90;
+    yuan.x=width-width/4
+    yuan.y=height-35
+    doinstr(yuan,instr2,offset)
+    //offset++
     //offset++
     //print(offset)
     
