@@ -55,8 +55,8 @@ let count=1
 function setup() {
   createCanvas(windowWidth, windowHeight);
   angleMode(DEGREES);
-  greg = new Gurtle(width / 4,height-35, color(167,173,186));
-  yuan = new Gurtle(width-width/4,height-35,color(192,197,206))
+  greg = new Gurtle(width / 3.5,height-35, color(167,173,186));
+  yuan = new Gurtle(width-width/3.5,height-35,color(192,197,206))
   greg.angle = -90;
   yuan.angle =-90
   strokeWeight(15)
@@ -73,13 +73,13 @@ function draw(){
     offset = sin(frameCount)
   
     greg.angle = -90;
-    greg.x=width/4
+    greg.x=width/3.5
     greg.y=height-35
     doinstr(greg,instr,offset)
 
 
     yuan.angle = -90;
-    yuan.x=width-width/4
+    yuan.x=width-width/3.5
     yuan.y=height-35
     doinstr(yuan,instr2,offset)
     //offset++
